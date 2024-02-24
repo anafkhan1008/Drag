@@ -1,0 +1,85 @@
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-size: 36px;
+}
+
+td {
+    border: 10px solid #ccc;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 190px;
+    height: 190px;
+    margin: auto;
+    line-height: 190px;
+    text-align: center;
+    cursor: move;
+    transition: all 1s ease;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+   
+}
+
+.box-content {
+    font-size: 100px;
+    color: #fff;
+}
+
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.box.dragging {
+    opacity: 0.5;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    width: 300px;
+    border-radius: 10%;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #460aa7;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btn i {
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background-color: #061880;
+}
+
+.fa-plus-circle, .fa-undo {
+    font-size: 22px;
+    margin-right: 7px;
+}
+
